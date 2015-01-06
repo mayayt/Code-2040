@@ -1,81 +1,53 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;}
-{\colortbl;\red255\green255\blue255;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+Registration Result:
 
-\f0\b\fs48 \cf0 \ul \ulc0 Registration Result:
-\b0\fs24 \ulnone \
-\
-\pard\pardeftab720
-
-\f1\fs22 \cf0 Sending 'POST' request to URL : http://challenge.code2040.org/api/register\
+Sending 'POST' request to URL : http://challenge.code2040.org/api/register\
 Post parameters : \{"email":"mayat@stanford.edu","github":"https://github.com/mayayt/Code2040"\}\
 Response Code : 200\
 \{"result":"kwaD7Tul2y"\}
-\f0\fs24 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-\cf0 \
 
-\b\fs48 \ul Stage 1 Result:
-\b0\fs24 \ulnone \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f1\fs22 \cf0 \
-\pard\pardeftab720
-\cf0 Sending 'POST' request to URL : http://challenge.code2040.org/api/getstring\
+Stage 1 Result:
+Sending 'POST' request to URL : http://challenge.code2040.org/api/getstring\
 Post parameters : \{"token":"kwaD7Tul2y"\}\
 Response Code : 200\
 \{"result":"k8o1R"\}\
-\
+
 Sending 'POST' request to URL : http://challenge.code2040.org/api/validatestring\
 Post parameters : \{"token":"kwaD7Tul2y","string":"R1o8k"\}\
 Response Code : 200\
 \{"result":"PASS: stage1. Enrollment record updated!"\}\
-\
-\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\f0\b\fs48 \cf0 \ul \ulc0 Stage 2 Result:\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f1\b0\fs22 \cf0 \ulnone \
-\pard\pardeftab720
-\cf0 Sending 'POST' request to URL : http://challenge.code2040.org/api/haystack\
+
+Stage 2 Result:
+Sending 'POST' request to URL : http://challenge.code2040.org/api/haystack\
 Post parameters : \{"token":"kwaD7Tul2y"\}\
 Response Code : 200\
 \{"result":\{"haystack":["PXWQd","wwQ8O","UFogA","UV3SH","Ua3uL","ACga0","MwB4P","xdZyI","eeAMp","K2hOP","HliVL","Twoq5","splZ6","TKXnq","NRtMg","vhktT","oLcPU","omZPZ","0kql9","uiChS"],"needle":"UV3SH"\}\}\
-\
+
 Sending 'POST' request to URL : http://challenge.code2040.org/api/validateneedle\
 Post parameters : \{"token":"kwaD7Tul2y","needle":"3"\}\
 Response Code : 200\
 \{"result":"PASS: stage2. Enrollment record updated!"\}
-\f0\b\fs48 \ul \ulc0 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-\cf0 \
-Stage 3 Result:\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f1\b0\fs22 \cf0 \ulnone \
-\pard\pardeftab720
-\cf0 Sending 'POST' request to URL : http://challenge.code2040.org/api/prefix\
+
+
+Stage 3 Result:
+Sending 'POST' request to URL : http://challenge.code2040.org/api/prefix\
 Post parameters : \{"token":"kwaD7Tul2y"\}\
 Response Code : 200\
 \{"result":\{"array":["2592U4Io","259OB2CH","5681DFJs","259blIcW","472cjvw1","4722apxD"],"prefix":"259"\}\}\
-\
+
 Sending 'POST' request to URL : http://challenge.code2040.org/api/validateprefix\
 Post parameters : \{"token":"kwaD7Tul2y","array":["5681DFJs","472cjvw1","4722apxD"]\}\
 Response Code : 200\
 \{"result":"PASS: stage3. Enrollment record updated!"\}
-\f0\b\fs48 \ul \ulc0 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-\cf0 \
-Stage 4 Result:\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f1\b0\fs22 \cf0 \ulnone \
-\pard\pardeftab720
-\cf0 Sending 'POST' request to URL : http://challenge.code2040.org/api/time\
+
+
+
+Stage 4 Result:
+Sending 'POST' request to URL : http://challenge.code2040.org/api/time\
 Post parameters : \{"token":"kwaD7Tul2y"\}\
 Response Code : 200\
 \{"result":\{"datestamp":"2016-04-07T00:12:00.000Z","interval":209556116\}\}\
@@ -84,17 +56,14 @@ Sending 'POST' request to URL : http://challenge.code2040.org/api/validatetime\
 Post parameters : \{"token":"kwaD7Tul2y","datestamp":"2022-11-27T02:13:56.000-08:00"\}\
 Response Code : 200\
 \{"result":"PASS: stage4. Enrollment record updated!"\}\
-\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\f0\b\fs48 \cf0 \ul \ulc0 Checking Grades Result:\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f1\b0\fs22 \cf0 \ulnone \
-\pard\pardeftab720
-\cf0 Sending 'POST' request to URL : http://challenge.code2040.org/api/status\
+
+
+Checking Grades Result:\
+Sending 'POST' request to URL : http://challenge.code2040.org/api/status\
 Post parameters : \{"token":"kwaD7Tul2y"\}\
 Response Code : 200\
 \{"result":\{"Stage 1 passed":true,"Stage 2 passed":true,"Stage 3 passed":true,"Stage 4 passed":true\}\}
-\f0\b\fs48 \ul \ulc0 \
+
 }
