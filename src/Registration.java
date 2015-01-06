@@ -6,34 +6,34 @@ public class Registration {
 
 	/*Constants */
 	private static final String EMAIL = "mayat@stanford.edu";
-	private static final String GITHUB = "https://github.com/mayayt/Code2040";
+	private static final String REPOSITORYLINK = "https://github.com/mayayt/Code2040";
 	
 	public static void main(String[] args) throws IOException {
 		
 		/**
 		 * String variable containing our API Endpoint link 
 		 */
-		String urlText = "http://challenge.code2040.org/api/register";
+		String targetUrl = "http://challenge.code2040.org/api/register";
 		
 		/**
 		 * Parameters that allow me to access and retrieve my token as my unique identifier 
 		 */
-		String content = "{\"email\":\""+EMAIL+"\",\"github\":\""+GITHUB+"\"}";
+		String content = "{\"email\":\""+EMAIL+"\",\"github\":\""+REPOSITORYLINK+"\"}";
 		
 		/* Sending a POST request */
-		getPostInformation(urlText, content);
+		getPostInformation(targetUrl, content);
 		
 	}
 	
 	/**
 	 * Retrieves a POST response from a specified HTTP server
-	 * @param urlText server to request response from
+	 * @param targetUrl server to request response from
 	 * @param urlParameters the information being sent with which to request
 	 * @return returns a string of the response in JSON
 	 * @throws IOException
 	 */
-	public static String getPostInformation (String urlText, String urlParameters) throws IOException {
-		URL obj = new URL(urlText);
+	public static String getPostInformation (String targetUrl, String urlParameters) throws IOException {
+		URL obj = new URL(targetUrl);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
  
 		// Add request header
@@ -47,7 +47,7 @@ public class Registration {
 		wr.close();
  
 		int responseCode = con.getResponseCode();
-		System.out.println("\nSending 'POST' request to URL : " + urlText);
+		System.out.println("\nSending 'POST' request to URL : " + targetUrl);
 		System.out.println("Post parameters : " + urlParameters);
 		System.out.println("Response Code : " + responseCode);
  
